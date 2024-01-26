@@ -37,4 +37,5 @@ jobs:
           target_sync_branch: ${{ env.BRANCH_NAME }}
           target_repo_token: ${{ secrets.ACTION_TOKEN }}
           upstream_pull_args: --allow-unrelated-histories --no-edit 
+          shallow_since: '1 days ago'
           test_mode: false
