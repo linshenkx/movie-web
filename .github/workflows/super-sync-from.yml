@@ -14,8 +14,8 @@ jobs:
       - name: Checkout target repo
         uses: actions/checkout@v4
 # 如果上游仓库有对.github/workflows/下的文件进行变更，则需要使用有workflow权限的token
-#        with:
-#          token: ${{ secrets.ACTION_TOKEN }}
+        with:
+          token: ${{ secrets.ACTION_TOKEN }}
    
       # 获取分支名
       - name: Get branch name (merge)
